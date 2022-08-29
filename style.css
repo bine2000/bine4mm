@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+.banner-area {
+	background: url(MEDUSA\ \(2\).jpg);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-position: center center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	position: absolute;
+	height: 110vh;
+	width: 100vw;
+	z-index: 1;
+	text-align: left;
+	color:  rgba(20, 17, 13, 0.87);
+}
+ input{
+	background-color: #4CAF50; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+.gg{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 100px solid rgba(54 51 46 / 11%);
+	
+}
+aside{
+	font-size:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:antiquewhite;
+	text-align: center;
+	border: 5px solid blanchedalmond;
+	background-color: rgba(22, 9, 9, 0.932);
+}
+
+.back{
+	background-color:  rgba(20, 17, 13, 0.87);
+}
+
+.banner-area h1 {
+	font-size: 55px;
+	margin-bottom: 15px;
+	font-weight: 300;
+	font-family: russo one;
+}
+h4{
+	font-size: 35px;
+	font-weight: 300;
+	font-family:'Times New Roman', Times, serif;
+	color: #fff;
+	text-align: center;
+}
+
+h6{
+	font-size: 25px;
+	font-weight: 300;
+	margin-top: 15px;
+	border: 35px solid black;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color: rgb(168, 220, 230);
+	background-color: #070402f8;
+	
+
+}
+.banner-area p {
+	font-size: 25px;
+	font-family:'Times New Roman', Times, serif
+	color:#000
+}
+
+.nav-area {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	z-index: 2;
+	height: 100vh;
+	width: 100vw;
+}
+.items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateY(-100%);
+	transition: transform 0.5s;
+	transition-delay: 0.5s;
+	visibility: hidden;
+}
+.items ul {
+	width: 100%;
+}
+.items ul li {
+	font-size: 30px;
+	min-height: 40px;
+	text-align: center;
+	list-style: none;
+}
+.items ul li a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	font-family: russo one;
+	display: block;
+	padding: 15px 0;
+}
+.items ul li a:hover {
+	background: #fff;
+	background: #070402f8;
+	
+}
+.box-area {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: flex 0.45s;
+}
+.box-area:nth-child(2) {
+	flex: 1 0 100%;
+	background: transparent;
+}
+.box-area:nth-child(odd) {
+	background: #1f1c1bf8;
+	
+}
+.menu {
+	position: absolute;
+	top: 20px;
+	right: 80px;
+	z-index: 5;
+	background: #6d6764f8;
+	padding: 0 15px;
+}
+.single-menu {
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	font-size: 30px;
+}
+.single-menu div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 16px;
+	height: 3px;
+	background: blueviolet;
+	transition: transform 0.3s;
+	transition-delay: 0.5s;
+}
+body.animate .box-area:nth-child(2) {
+	flex: 0;
+}
+body.animate .items {
+	transform: translateY(0%);
+	visibility: visible;
+	pointer-events: all;
+}
